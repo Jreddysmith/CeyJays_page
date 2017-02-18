@@ -32,8 +32,8 @@
 
 <body>
 
-<div class="brand">CeyJay</div>
-<div class="address-bar">Musician | Dancer| Instructor </div>
+<div style="color: black;" class="brand">CeyJay</div>
+<div style="color: black;" class="address-bar">Musician | Dancer| Instructor </div>
 
 <!-- Navigation -->
 <nav class="navbar navbar-default" role="navigation">
@@ -139,6 +139,47 @@
             </div>
             <div class="clearfix"></div>
         </div>
+    </div>
+    <div>
+        <!-- videos -->
+
+        <video style="margin-right: 20px;" id="video3" width="200" height="240" controls="controls">
+            <source src="vid/Video3.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+        </video>  
+        <video style="margin-right: 20px;" id="video2" width="200" height="240" controls="controls">
+            <source src="vid/Video2.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+        </video>  
+        <video style="margin-right: 20px;" id="video" width="200" height="240" controls="controls">
+            <source src="vid/Video.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+        </video>  
+        <video style="margin-right: 20px;" id="video4" width="200" height="240" controls="controls">
+            <source src="vid/Video4.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+        </video>   
+        <video id="video6" width="200" height="240" controls="controls">
+            <source src="vid/Video6.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+        </video>
+
+        <script>
+            var vid = document.getElementById("video", "video2", "video3", "video4", "video6");
+            function enableAutoplay() { 
+                vid.autoplay = true;
+                vid.load();
+            }
+
+            function disableAutoplay() { 
+                vid.autoplay = false;
+                vid.load();
+            } 
+
+            function checkAutoplay() { 
+                alert(vid.autoplay);
+            } 
+        </script> 
     </div>
 
     <!--<div class="row">-->
